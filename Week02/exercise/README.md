@@ -18,3 +18,5 @@
 ### 代码运行结果
 
 ![代码运行结果](./output/output.png "运行结果")
+
+![代码运行结果](./output/output.jpg "运行结果")
