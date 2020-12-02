@@ -17,6 +17,38 @@
 
 ### 代码运行结果
 
-![代码运行结果](./output/output.png "运行结果")
+```bash
+$ ./week02.exe
+service: sql: no rows in result set
+Dao: not found, user id = 19
+main.(*dao).GetUserById
+        C:/Users/ligua/OneDrive/study/golang/Go进阶训练营/github/ligw7/Go-000/Week02/exercise/dao.go:24
+main.(*service).GetUserInfo
+        C:/Users/ligua/OneDrive/study/golang/Go进阶训练营/github/ligw7/Go-000/Week02/exercise/service.go:34
+main.(*api).GetUserInfo
+        C:/Users/ligua/OneDrive/study/golang/Go进阶训练营/github/ligw7/Go-000/Week02/exercise/api.go:14
+main.main
+        C:/Users/ligua/OneDrive/study/golang/Go进阶训练营/github/ligw7/Go-000/Week02/exercise/main.go:13
+runtime.main
+        c:/go/src/runtime/proc.go:204
+runtime.goexit
+        c:/go/src/runtime/asm_amd64.s:1374
+unnormal responsed json:
+ {
+    "err_code": 1,
+    "err_msg": "the user is not exist.",
+    "data": {}
+}
+normal responsed json:
+ {
+    "err_code": 0,
+    "err_msg": "OK",
+    "data": {
+        "name": "张三",
+        "age": 21
+    }
+}
+
+```
 
 ![代码运行结果](./output/output.jpg "运行结果")
