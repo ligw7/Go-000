@@ -50,5 +50,3 @@ normal responsed json:
 }
 
 ```
-
-![代码运行结果](./output/output.jpg "运行结果")
