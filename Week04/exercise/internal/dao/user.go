@@ -2,19 +2,24 @@ package dao
 
 import "database/sql"
 import "github.com/pkg/errors"
+import "week04/internal/model"
 
-var DaoInstance *dao
+var daoInstance *Dao
 
 func init() {
-	DaoInstance = new(dao)
+	daoInstance = new(Dao)
 }
 
-type dao struct {
+func NewDao() *Dao {
+	return daoInstance
 }
 
-func (d *dao) GetUserById(id uint64) (*User, error) {
+type Dao struct {
+}
+
+func (d *Dao) GetUserById(id uint64) (*model.User, error) {
 	if id == 21 {
-		zhangSan := User{Name: "张三", Age: 21}
+		zhangSan := model.User{Name: "张三", Age: 21}
 		return &zhangSan, nil
 	}
 	// Dao层，出现 ErrNoRows
